@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-08-16 16:53:41.757 UTC</timestamp>
+  <original>
+    <name>first-pipeline/master</name>
+    <number>1</number>
+  </original>
+  <md5sum>0d90898532210246893d448740ee6ad8</md5sum>
+  <fileName>Docker image sha256:0d90898532210246893d448740ee6ad83ad351f71dc188d4a5705d193cb3a580</fileName>
+  <usages/>
+  <facets>
+    <org.jenkinsci.plugins.docker.commons.fingerprint.DockerRunFingerprintFacet plugin="docker-commons@1.13">
+      <timestamp>1534438421791</timestamp>
+      <imageId>sha256:0d90898532210246893d448740ee6ad83ad351f71dc188d4a5705d193cb3a580</imageId>
+      <usages>
+        <entry>
+          <string>first-pipeline/master</string>
+          <ranges>1</ranges>
+        </entry>
+      </usages>
+      <records class="java.util.concurrent.CopyOnWriteArrayList">
+        <org.jenkinsci.plugins.docker.commons.fingerprint.ContainerRecord>
+          <host>6766f65b47a6</host>
+          <containerId>6766f65b47a6c88689bc9b90448935621339e2168ba6c42151c0a06b4616ab49</containerId>
+          <containerName>/brave_noether</containerName>
+          <created>1534438420000</created>
+          <tags/>
+        </org.jenkinsci.plugins.docker.commons.fingerprint.ContainerRecord>
+      </records>
+    </org.jenkinsci.plugins.docker.commons.fingerprint.DockerRunFingerprintFacet>
+  </facets>
+</fingerprint>

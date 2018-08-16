@@ -1,0 +1,18 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/jtong-demos/learn-jenkins.git
+ > git init /var/jenkins_home/workspace/first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA # timeout=10
+Fetching upstream changes from https://github.com/jtong-demos/learn-jenkins.git
+ > git --version # timeout=10
+ > git fetch --no-tags --progress https://github.com/jtong-demos/learn-jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/jtong-demos/learn-jenkins.git
+ > git fetch --no-tags --progress https://github.com/jtong-demos/learn-jenkins.git +refs/heads/*:refs/remotes/origin/*
+Checking out Revision ae69060c80380035ca4b5affcd9622c87fad4f63 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ae69060c80380035ca4b5affcd9622c87fad4f63
+Commit message: "remove useless code"
+First time build. Skipping changelog.

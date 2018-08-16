@@ -1,0 +1,24 @@
+Started
+[Thu Aug 16 16:53:03 UTC 2018] Starting branch indexing...
+ > git --version # timeout=10
+ > git ls-remote --symref https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+Creating git repository in /var/jenkins_home/caches/git-b5c851f156af40e5dfaf0ae7dc5970a6
+ > git init /var/jenkins_home/caches/git-b5c851f156af40e5dfaf0ae7dc5970a6 # timeout=10
+Setting origin to https://github.com/jtong-demos/learn-jenkins.git
+ > git config remote.origin.url https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+Fetching & pruning origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --progress origin +refs/heads/*:refs/remotes/origin/* --prune
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git ls-remote -h https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+Checking branches...
+  Checking branch master
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: master
+Processed 1 branches
+[Thu Aug 16 16:53:12 UTC 2018] Finished branch indexing. Indexing took 8.6 sec
+Finished: SUCCESS

@@ -1,0 +1,77 @@
+Branch indexing
+ > git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to https://github.com/jtong-demos/learn-jenkins.git
+ > git config remote.origin.url https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --progress origin +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/master
+Seen 1 remote branch
+Obtained Jenkinsfile from ae69060c80380035ca4b5affcd9622c87fad4f63
+Running on [8mha:////4KBLoowwHSGLJOQ1hGDg3CCi2FukPq9NoJOsUU/N/G2BAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/jtong-demos/learn-jenkins.git
+ > git init /var/jenkins_home/workspace/first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA # timeout=10
+Fetching upstream changes from https://github.com/jtong-demos/learn-jenkins.git
+ > git --version # timeout=10
+ > git fetch --no-tags --progress https://github.com/jtong-demos/learn-jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jtong-demos/learn-jenkins.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/jtong-demos/learn-jenkins.git
+ > git fetch --no-tags --progress https://github.com/jtong-demos/learn-jenkins.git +refs/heads/*:refs/remotes/origin/*
+Checking out Revision ae69060c80380035ca4b5affcd9622c87fad4f63 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ae69060c80380035ca4b5affcd9622c87fad4f63
+Commit message: "remove useless code"
+First time build. Skipping changelog.
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Agent Setup)
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA] Running shell script
++ docker pull node:6.3
+6.3: Pulling from library/node
+Digest: sha256:cde2bd38dbfec5e6e2981ec7a05056c734148fcd4bff088e143f11b2bafe3b64
+Status: Image is up to date for node:6.3
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA] Running shell script
++ docker inspect -f . node:6.3
+.
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container b5f730c518531a608b2ad0c6883a940878194172fbc38eb71e7024938737ec7f
+$ docker run -t -d -u 0:0 -w /var/jenkins_home/workspace/first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA --volumes-from b5f730c518531a608b2ad0c6883a940878194172fbc38eb71e7024938737ec7f -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:6.3 cat
+$ docker top 6766f65b47a6c88689bc9b90448935621339e2168ba6c42151c0a06b4616ab49 -eo pid,comm
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (build)
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[first-pipeline_master-NUZBAOYKCEZYRTOC2DE4WF57A7DHIZPHZHRJZ7BMNXDJQO4CSOPA] Running shell script
++ npm --version
+3.10.3
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+$ docker stop --time=1 6766f65b47a6c88689bc9b90448935621339e2168ba6c42151c0a06b4616ab49
+$ docker rm -f 6766f65b47a6c88689bc9b90448935621339e2168ba6c42151c0a06b4616ab49
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4MKG3Hgw34CbrZFaoJ+Ey6bgcj/wDcNI5xdufqJDOn2tAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
